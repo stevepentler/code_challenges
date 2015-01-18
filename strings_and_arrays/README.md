@@ -19,8 +19,15 @@ Write a method that will replace all spaces in a string with '%20'. This method
 will not replace any trailing spaces with %20.
 
 
-
 ## Matrix Rotator - rotator_test.rb
 
 Write a method that will take an NxN matrix of numbers and rotate it 90 degrees
 clockwise.
+
+
+## Chunker - chunker_test.rb
+We are working with a piece of hardware that can only accept inputs in small amounts. You want to send strings to it in five character chunks.
+
+Create a method that when given a lengthy string, will break it up into an array where each element consists of a string of five characters.
+
+**DO NOT USE ENUMERABLES**
