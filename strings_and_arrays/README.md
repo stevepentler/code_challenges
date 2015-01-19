@@ -1,6 +1,3 @@
-This is no longer being updated. Moving everything to a new repository.
-
-New Repository:  https://github.com/mikedao/code_challenges
 
 # Strings and Arrays
 A collection of exercises involving strings and arrays.
