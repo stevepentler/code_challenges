@@ -16,3 +16,5 @@ in her lyrics as the value.
 
 
 Write a method that will return the top x used words.
+
+Food for thought, should we include words such as, A, An, And, and The be included in our top words? Strip them out.
