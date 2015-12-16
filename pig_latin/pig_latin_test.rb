@@ -13,7 +13,7 @@ class PigLatinTest < Minitest::Test
     p = PigLatin.new
     assert_equal ["dog"], p.splitter("dog")
   end
-  
+
   def test_cat_to_at_cay
     p = PigLatin.new
     assert_equal "at-cay", p.latinify_consonant("cat")
@@ -43,7 +43,6 @@ class PigLatinTest < Minitest::Test
     p = PigLatin.new
     assert_equal "at-cay", p.latinify("cat")
   end
-
 
   def test_phrase
     p = PigLatin.new

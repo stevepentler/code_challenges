@@ -1,6 +1,11 @@
 require 'pry'
-
 class PigLatin
+
+  def run
+    puts "hello, please enter a word or phrase"
+    string = gets.chomp
+    puts latinify(string) + " oodbye-gay!"
+  end 
 
   def latinify(string)
     result = splitter(string).map do |word|
@@ -14,9 +19,11 @@ class PigLatin
   end 
 
   def route(word)
-    return "oodbye-gay!" if word == "exit!"
-    return latinify_vowel(word) if starts_with_vowel(word) == true
-    return latinify_consonant(word) if starts_with_vowel(word) == false
+    if starts_with_vowel(word)
+      latinify_vowel(word)
+    else 
+      latinify_consonant(word)
+    end
   end 
 
   def starts_with_vowel(string)
@@ -35,3 +42,14 @@ class PigLatin
     characters.join + "-#{mover}ay"
   end 
 end 
+
+p = PigLatin.new
+p.run 
+
+  # loop do
+  #   puts "What would you like to translate:"
+  #   string = gets.chomp 
+
+  #   result = PigLatin.latinify(string) + "oodbye-gay!"
+  #   puts result 
+  # end 
