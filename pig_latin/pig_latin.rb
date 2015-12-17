@@ -2,9 +2,12 @@ require 'pry'
 class PigLatin
 
   def run
-    puts "hello, please enter a word or phrase"
-    string = gets.chomp
-    puts latinify(string) + " oodbye-gay!"
+    loop do 
+      puts "hello, please enter a word or phrase"
+      string = gets.chomp
+      puts latinify(string) 
+      break if latinify(string).include?("oodbye-gay!!")
+    end 
   end 
 
   def latinify(string)
@@ -19,7 +22,9 @@ class PigLatin
   end 
 
   def route(word)
-    if starts_with_vowel(word)
+    if word == "exit!"
+      "oodbye-gay!"
+    elsif starts_with_vowel(word)
       latinify_vowel(word)
     else 
       latinify_consonant(word)
@@ -45,11 +50,3 @@ end
 
 p = PigLatin.new
 p.run 
-
-  # loop do
-  #   puts "What would you like to translate:"
-  #   string = gets.chomp 
-
-  #   result = PigLatin.latinify(string) + "oodbye-gay!"
-  #   puts result 
-  # end 

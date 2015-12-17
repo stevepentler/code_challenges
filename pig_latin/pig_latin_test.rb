@@ -61,7 +61,7 @@ class PigLatinTest < Minitest::Test
 
   def test_breaks_on_exit
     p = PigLatin.new
-    assert_equal "apple-way og-day oodbye-gay!", p.latinify("apple dog exit! dog") 
+    assert_equal "apple-way og-day oodbye-gay!", p.latinify("apple dog exit!") 
   end 
 
 end
