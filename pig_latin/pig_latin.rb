@@ -3,8 +3,13 @@ class PigLatin
 
   def run
     loop do 
-      puts "hello, please enter a word or phrase"
+      puts "Hey Villager, please enter the lyrics to the Y.M.C.A"
+      puts "--Y--"
+      puts "--M--"
+      puts "--C--"
+      puts "--A--"
       string = gets.chomp
+      puts "=>"
       puts latinify(string) 
       break if latinify(string).include?("oodbye-gay!!")
     end 
