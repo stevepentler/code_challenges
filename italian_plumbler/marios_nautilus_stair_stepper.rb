@@ -1,7 +1,10 @@
-require 'pry'
+puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 puts "Enter a number less than 30"
+puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 n = gets.chomp.to_i
-puts "Please Choose a symbol"
+puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+puts "Choose a symbol, letter, or number"
+puts "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 text = gets.chomp.to_s
 
 
