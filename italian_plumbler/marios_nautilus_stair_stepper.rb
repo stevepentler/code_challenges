@@ -1,19 +1,18 @@
 require 'pry'
 puts "Enter a number"
 n = gets.chomp.to_i
-text = "#"
+puts "Please Choose a symbol"
+text = gets.chomp.to_s
 
 
 def repeat(text, n)
-  p ([text] * n).join
+  i = 1
+  until (i == n + 1)
+    p ([text] * i).join.rjust(20) 
+    i += 1
+  end 
 end
 
-n.times do 
-  repeat(text, n).rjust(10)
-  n -= 1
-end
 
+repeat(text, n)
 
-
-
-five = repeat("#", 5)
